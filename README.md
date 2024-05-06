@@ -14,22 +14,22 @@ https://www.kali.org/get-kali/#kali-virtual-machines
 
 
 Informacion basica:
-Kali linux es una distribución basada en debian, cuenta con diversas herramientas enunciare algunos usos de las mismas.
+<p>Kali linux es una distribución basada en debian, cuenta con diversas herramientas enunciare algunos usos de las mismas.</p>
 
--Recopilacion de Informacion
+<li>Recopilacion de Informacion</li>
 
--Analisis de Vulnerabilidad
+<li>Analisis de Vulnerabilidad</li>
 
--Ataques Inalambricos
+<li>Ataques Inalambricos</li>
 
--Ataques a aplicaciones Web
+<li>Ataques a aplicaciones Web</li>
 
--Analisis forense digital
+<li>Analisis forense digital</li>
 
 
-Ejecutamos adentro de la consola: ifconfig
+<h4>Ejecutamos adentro de la consola: ifconfig</h4>
 
-Podemos visualizar la interfaz de red *eth0* significa que es una tarjeta red tipo *Ethernet* es decir alambrica, Kali en la maquina VMware independientemente que este nuestro pc conectado a wifi lo reconoce como eth0 por eso necesitaremos una tarjeta de red externa.
+<p>Podemos visualizar la interfaz de red *eth0* significa que es una tarjeta red tipo *Ethernet* es decir alambrica, Kali en la maquina VMware independientemente que este nuestro pc conectado a wifi lo reconoce como eth0 por eso necesitaremos una tarjeta de red externa.</p>
 
 Para estos  en caso de no contar con una antena la informacion aca se esta realizando con una AC600 TP-LINK:
 
@@ -61,9 +61,25 @@ Identificador de 48 bits se encuentra en 6 bloques de dos caracteres hexadecimal
 
 
 
-
-
 # Spoofing
+<h3>El atacante puede cambiar su direccion MAC y hacerse pasar por otro dispositivo.</h3> 
+<p>Lo que ocasiona que cuando el dispositivo reciba el paquete piense que este viene del access point de confianza.</p> 
+  
+Para cambiar la direccion MAC lo podemos realizar de la siguiente forma ejecutar el comando en consola *ifconfig* este nos mostrata la direccion MAC de nuestra tarjeta.
+En la imagen se muestrea donde podemos ubicar la direccion MAC 
+![imagen](https://github.com/SantiagoBaquero/Hacking-de-Redes-Wi-Fi/assets/102531445/f92bc70b-4c0a-414b-8629-201aee67ae7e)
+
+
+<p>Siguiente comando: <strong>ifconfig wlan0 down</strong>  <br> Con este comando desactivamos la interfaz de red wlna0 (puede solicitar super usuario "sudo su") <br> Siguiente comando: <strong>ifconfig wlan0 hw ether</strong>(dirección mac) -> <strong>ifconfig wlan0 hw ether 00:11:22:33:44:55</strong>  <br> Siguiente comando: <strong>ifconfig wlan0 up</strong> (Habilitamos la interfaz)   </p>
+
+![imagen](https://github.com/SantiagoBaquero/Hacking-de-Redes-Wi-Fi/assets/102531445/78dbe0f9-b8db-4b63-9711-3499e416c9d6)
+
+
+
+
+
+
+  
 
 
 
