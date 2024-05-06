@@ -75,7 +75,7 @@ En la imagen se muestrea donde podemos ubicar la direccion MAC
 ![imagen](https://github.com/SantiagoBaquero/Hacking-de-Redes-Wi-Fi/assets/102531445/78dbe0f9-b8db-4b63-9711-3499e416c9d6)
 
 
-
+<p>En caso de que el cambio no se mantenga utilice el comando: <strong>servie NetworkManager stop</strong>  posterior a esto los comandos previamente mencionados y para finalizar <strong>servie NetworkManager start</strong> </p>
 
 
 
