@@ -77,7 +77,7 @@ En la imagen se muestrea donde podemos ubicar la direccion MAC
 
 <p>En caso de que el cambio no se mantenga utilice el comando: <strong>servie NetworkManager stop</strong>  posterior a esto los comandos previamente mencionados y para finalizar <strong>servie NetworkManager start</strong> </p>
 
-
+# Sniffing
 
   
 
